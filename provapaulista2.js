@@ -1,7 +1,7 @@
 (function() {
     // --- Configurações (Preencha com sua chave API se for usar o Gemini de verdade) ---
     const GEMINI_API_KEY = "AIzaSyBlzdH0vfP0J90p6rtMytvJFcJaFCbv4HI"; // <<<<<<< IMPORTANTE: Substitua pela sua chave!
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${AIzaSyBlzdH0vfP0J90p6rtMytvJFcJaFCbv4HI}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
     const RESPONSE_DISPLAY_DURATION = 6000; // 6 segundos
 
     // --- Funções Auxiliares ---
@@ -239,3 +239,4 @@
                     const { question, options } = extractQuestionAndOptions();
                     if (question && options.length > 0) {
              
+
